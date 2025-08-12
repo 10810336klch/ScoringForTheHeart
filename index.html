@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>互動問卷</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>互動問卷</h1>
+        <form id="formA">
+            <h2>使用者 A</h2>
+            <label>1. 你喜歡甜食嗎？</label>
+            <select name="q1">
+                <option value="是">是</option>
+                <option value="否">否</option>
+            </select>
+            <label>2. 你喜歡戶外活動嗎？</label>
+            <select name="q2">
+                <option value="是">是</option>
+                <option value="否">否</option>
+            </select>
+            <button type="submit">送出 A 的答案</button>
+        </form>
+
+        <form id="formB" style="margin-top:20px;">
+            <h2>使用者 B</h2>
+            <label>1. 你喜歡甜食嗎？</label>
+            <select name="q1">
+                <option value="是">是</option>
+                <option value="否">否</option>
+            </select>
+            <label>2. 你喜歡戶外活動嗎？</label>
+            <select name="q2">
+                <option value="是">是</option>
+                <option value="否">否</option>
+            </select>
+            <button type="submit">送出 B 的答案</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
